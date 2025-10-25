@@ -1,5 +1,5 @@
 # SecurityGuard - Android Security Monitoring Library
-
+[![](https://jitpack.io/v/abd476/SecurityFeatures.svg)](https://jitpack.io/#abd476/SecurityFeatures)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Android](https://img.shields.io/badge/Platform-Android-green.svg)](https://developer.android.com)
 [![Min SDK](https://img.shields.io/badge/Min%20SDK-24-blue.svg)](https://developer.android.com/about/versions/nougat)
@@ -45,8 +45,8 @@ In your app's `build.gradle.kts`:
 
 ```kotlin
 
-	dependencies {
-	        implementation 'com.github.abd476:SecurityFeatures:Tag'
+		dependencies {
+	        implementation 'com.github.abd476:SecurityFeatures:v1.0.0'
 	}
 ```
 
