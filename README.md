@@ -32,16 +32,22 @@ SecurityGuard provides 7 essential security monitoring features:
 
 ## Installation
 
-### Step 1: Add the AAR to your project
+Add it in your root settings.gradle at the end of repositories:
 
-Download the latest `securityguard-release.aar` and place it in your app's `libs` folder.
-
+	dependencyResolutionManagement {
+		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+		repositories {
+			mavenCentral()
+			maven { url 'https://jitpack.io' }
+		}
+	}
 In your app's `build.gradle.kts`:
 
 ```kotlin
-dependencies {
-    implementation(files("libs/securityguard-release.aar"))
-}
+
+	dependencies {
+	        implementation 'com.github.abd476:SecurityFeatures:Tag'
+	}
 ```
 
 ### Step 2: Add required permissions
