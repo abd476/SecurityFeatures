@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="library_name">SecurityGuard</string>
+    <string name="notification_channel_id">security_guard_channel</string>
+    <string name="notification_channel_name">Security Alerts</string>
+    <string name="notification_channel_description">Notifications for security events</string>
+</resources>
