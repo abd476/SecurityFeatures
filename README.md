@@ -1,4 +1,4 @@
-# 🛡️ SecurityGuard - Android Security Monitoring Library
+# SecurityGuard - Android Security Monitoring Library
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Android](https://img.shields.io/badge/Platform-Android-green.svg)](https://developer.android.com)
@@ -7,30 +7,30 @@
 
 **SecurityGuard** is a powerful, easy-to-use Android library that provides comprehensive security monitoring features with a single, clean API. Add advanced anti-theft, device protection, and phone finder capabilities to your Android app in minutes.
 
-## ✨ Features
+## Features
 
 SecurityGuard provides 7 essential security monitoring features:
 
 | Feature | Description | Use Case |
 |---------|-------------|----------|
-| 🔌 **Charger Detection** | Alerts when charger is disconnected | Anti-theft protection while charging |
-| 🔋 **Battery Monitor** | Monitors battery level (full/low) | Battery management notifications |
-| 📶 **WiFi Monitor** | Tracks WiFi connection changes | Network connectivity alerts |
-| 👏 **Clap Detection** | Find phone by clapping | Locate misplaced phone |
-| 📱 **Motion Detection** | Detects device movement | Anti-theft alarm system |
-| 🤚 **Proximity Detection** | Detects nearby objects | Pocket detection, unauthorized access |
-| 🎧 **Handsfree Detection** | Monitors headphone connection | Audio accessory tracking |
+| **Charger Detection** | Alerts when charger is disconnected | Anti-theft protection while charging |
+| **Battery Monitor** | Monitors battery level (full/low) | Battery management notifications |
+| **WiFi Monitor** | Tracks WiFi connection changes | Network connectivity alerts |
+| **Clap Detection** | Find phone by clapping | Locate misplaced phone |
+| **Motion Detection** | Detects device movement | Anti-theft alarm system |
+| **Proximity Detection** | Detects nearby objects | Pocket detection, unauthorized access |
+| **Handsfree Detection** | Monitors headphone connection | Audio accessory tracking |
 
-## 🎯 Why SecurityGuard?
+## Why SecurityGuard?
 
-✅ **Simple API** - Single entry point for all features  
-✅ **Plug & Play** - Works out of the box with sensible defaults  
-✅ **Highly Configurable** - Customize sensitivity, sounds, and behavior  
-✅ **Production Ready** - Proper error handling and resource management  
-✅ **Lightweight** - Minimal dependencies, small footprint  
-✅ **No Backend Required** - All processing happens on-device  
+- **Simple API** - Single entry point for all features  
+- **Plug & Play** - Works out of the box with sensible defaults  
+- **Highly Configurable** - Customize sensitivity, sounds, and behavior  
+- **Production Ready** - Proper error handling and resource management  
+- **Lightweight** - Minimal dependencies, small footprint  
+- **No Backend Required** - All processing happens on-device  
 
-## 📦 Installation
+## Installation
 
 ### Step 1: Add the AAR to your project
 
@@ -84,9 +84,9 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
 }
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
-### Basic Usage (3 lines of code!)
+### Basic Usage (3 lines of code)
 
 ```kotlin
 // Initialize
@@ -149,9 +149,9 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
-## 📱 Real-World Use Cases
+## Real-World Use Cases
 
-### 🔒 Anti-Theft App
+### Anti-Theft App
 
 ```kotlin
 // Enable motion and charger detection
@@ -165,7 +165,7 @@ securityGuard.enableFeatures(
 // - Charger is unplugged
 ```
 
-### 🔍 Phone Finder App
+### Phone Finder App
 
 ```kotlin
 // Enable clap detection
@@ -175,7 +175,7 @@ securityGuard.enableFeature(SecurityFeature.CLAP_DETECTION)
 // Phone will play a loud alarm and light up the screen
 ```
 
-### 🔋 Battery Manager App
+### Battery Manager App
 
 ```kotlin
 // Custom battery threshold
@@ -186,7 +186,7 @@ securityGuard.enableFeature(SecurityFeature.BATTERY_MONITOR)
 // Get alerts when battery reaches 20% or is fully charged
 ```
 
-### 👨‍👩‍👧‍👦 Parental Control App
+### Parental Control App
 
 ```kotlin
 // Monitor connections and movements
@@ -199,7 +199,7 @@ securityGuard.enableFeatures(
 // Track when child connects/disconnects WiFi, headphones, etc.
 ```
 
-## 🎛️ API Reference
+## API Reference
 
 ### SecurityGuard (Main Class)
 
@@ -267,7 +267,7 @@ interface SecurityGuardCallback {
 }
 ```
 
-## ⚙️ Configuration Options
+## Configuration Options
 
 ### Customize Motion Sensitivity
 
@@ -307,7 +307,7 @@ val config = SecurityGuardConfig(
 securityGuard.configure(config)
 ```
 
-## 🎮 Control Features Dynamically
+## Control Features Dynamically
 
 ```kotlin
 // Check if feature is active
@@ -336,22 +336,22 @@ securityGuard.disableFeatures(
 securityGuard.stopAll()
 ```
 
-## 🔐 Privacy & Security
+## Privacy & Security
 
-✅ **No Internet Required** - All processing happens locally  
-✅ **No Data Collection** - Zero telemetry or analytics  
-✅ **No External Dependencies** - Only uses AndroidX libraries  
-✅ **Permissions Justified** - Each permission has a clear purpose  
-✅ **Open Source** - Code is transparent and auditable  
+- **No Internet Required** - All processing happens locally  
+- **No Data Collection** - Zero telemetry or analytics  
+- **No External Dependencies** - Only uses AndroidX libraries  
+- **Permissions Justified** - Each permission has a clear purpose  
+- **Open Source** - Code is transparent and auditable  
 
-## 📋 Requirements
+## Requirements
 
 - **Min SDK**: 24 (Android 7.0 Nougat)
 - **Target SDK**: 36
 - **Language**: Kotlin 2.0.21
 - **Dependencies**: AndroidX Core, AppCompat, Material Components
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Feature not working?
 
@@ -374,7 +374,7 @@ securityGuard.stopAll()
 3. **Reduce alarm duration**
 4. **Stop features when app is in background**
 
-## 📚 Sample App
+## Sample App
 
 A complete demo application is included in this repository. To run it:
 
@@ -384,13 +384,13 @@ A complete demo application is included in this repository. To run it:
 4. Test all features with toggle switches
 
 The demo app demonstrates:
-- ✅ All 7 security features
-- ✅ Runtime permission handling
-- ✅ Custom configuration
-- ✅ Event callbacks
-- ✅ Modern Material Design UI
+- All 7 security features
+- Runtime permission handling
+- Custom configuration
+- Event callbacks
+- Modern Material Design UI
 
-## 🔄 Version History
+## Version History
 
 ### 1.0.0 (Current)
 - Initial release
@@ -399,7 +399,7 @@ The demo app demonstrates:
 - Callback support
 - Production ready
 
-## 📄 License
+## License
 
 ```
 MIT License
@@ -425,26 +425,25 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit issues and pull requests.
 
-## 📞 Support
+## Support
 
 - **Documentation**: See `QUICKSTART.md` for quick start guide
+- **Build Instructions**: See `BUILD_INSTRUCTIONS.md` for build guide
 - **Examples**: Check the demo app in the `app` module
-- **Issues**: Report bugs or request features via GitHub Issues
+- **Technical Details**: See `LIBRARY_OVERVIEW.md` for architecture
 
-## 🌟 Show Your Support
+## Acknowledgments
 
-If you find SecurityGuard useful, please consider:
-- ⭐ Starring the repository
-- 🐛 Reporting bugs
-- 💡 Suggesting new features
-- 📖 Improving documentation
+Built with modern Android development best practices and designed for easy integration into any Android application.
 
 ---
 
-**Made with ❤️ for Android developers**
+**SecurityGuard - Simple, Powerful, Production-Ready**
 
-*SecurityGuard - Simple, Powerful, Production-Ready*
+Package: `com.security.guard`  
+Version: 1.0.0  
+License: MIT
