@@ -45,8 +45,8 @@ In your app's `build.gradle.kts`:
 
 ```kotlin
 
-	dependencies {
-	        implementation 'com.github.abd476:SecurityFeatures:Tag'
+		dependencies {
+	        implementation 'com.github.abd476:SecurityFeatures:v1.0.0'
 	}
 ```
 
